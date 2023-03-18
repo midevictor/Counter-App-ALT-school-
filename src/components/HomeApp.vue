@@ -12,7 +12,7 @@
         <p class='home__msg'>Ehiz Dev</p>
       </span> -->
     </main>
-    <div class="image-wrap"> 
+    <div class="image-wrap">
       <img :src="imageSrc" alt="My Image">
     </div>
   </div>
@@ -35,13 +35,15 @@ export default {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
-} 
+}
+
 .container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -49,7 +51,8 @@ export default {
   padding: 3rem;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
 }
-.image-wrap{
+
+.image-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,13 +60,15 @@ export default {
   width: 100%;
   height: 100%;
 }
+
 img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 2px;
-  
+
 }
+
 .not-found {
   display: flex;
   flex-direction: column;
@@ -76,14 +81,16 @@ img {
   height: 100%;
   overflow: none;
 }
-h1.heading-main{
+
+h1.heading-main {
   font-size: 4rem;
   font-weight: 700;
   font-family: primaryFont;
   letter-spacing: -0.025em;
-  color: rgb(17, 24, 39 ,1);
+  color: rgb(17, 24, 39, 1);
 }
-.home_par{
+
+.home_par {
   font-family: terFont;
   font-size: 1.5rem;
   text-align: left;
@@ -92,23 +99,25 @@ h1.heading-main{
   gap: 20px;
   justify-content: center;
   align-items: center;
-  color: rgb(17, 24, 39 ,1);
+  color: rgb(17, 24, 39, 1);
   /* margin-bottom: 4rem; */
-  color: rgb(107,114 ,128,1)
+  color: rgb(107, 114, 128, 1)
 }
-.button_wrap{
+
+.button_wrap {
   display: flex;
   justify-content: flex-start;
   margin-top: 0.5rem;
   gap: 1rem;
 }
-.btn{
+
+.btn {
   width: 100px;
   height: 50px;
   outline: none;
   border: none;
   border-radius: 10px;
-  background-color: rgb(17, 24, 39 ,1);
+  background-color: rgb(17, 24, 39, 1);
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
@@ -117,9 +126,10 @@ h1.heading-main{
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
-.btn a{
+
+.btn a {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
@@ -127,7 +137,60 @@ h1.heading-main{
   color: #fff;
   padding: 1rem;
 }
-@media screen {
-  
+
+@media screen and (max-width: 890px) {
+  h1.heading-main {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: primaryFont;
+    letter-spacing: -0.025em;
+    color: rgb(17, 24, 39, 1);
+  }
 }
-</style>
+
+@media screen and (max-width: 721px) {
+  .home_par {
+    font-family: terFont;
+    font-size: 1.1rem;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1s ease-in-out;
+    padding: 3rem;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+  }
+
+  h1.heading-main {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.3rem;
+  }
+
+  .home_par {
+    font-family: terFont;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .not-found {
+    text-align: center;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .not-found {
+    margin-top: 3rem;
+  }
+
+}</style>
