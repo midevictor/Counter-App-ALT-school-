@@ -87,7 +87,7 @@ export default {
   }
 
   .btn.increment{
-    background-color: #4682B4;
+    background-color:  rgb(31, 20, 241);
   }
   .btn.increment:hover{
     background-color: #6495ED;
@@ -97,7 +97,7 @@ export default {
   }
 
   .btn.decrement{
-    background-color: #89CFF0;
+    background-color: rgb(63, 58, 160);
   }
   .btn.decrement:hover{
     background-color: #6495ED;
